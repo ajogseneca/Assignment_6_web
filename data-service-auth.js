@@ -16,13 +16,10 @@ var userSchema = new mongoose.Schema({
 });
 
 let User;
-
 module.exports = {
     initialize: function () {
         return new Promise(function (resolve, reject) {
-            
             let db = mongoose.createConnection("mongodb+srv://ajopcs:Ipcs%40123456789@senecaweb.ndrnu9u.mongodb.net/?retryWrites=true&w=majority", { useNewUrlParser: true });
-            
             db.on('error', (err) => {
                 reject(err); 
             });
@@ -59,7 +56,6 @@ module.exports = {
             }
         });
     },
-    
     checkUser: function(userData) {
         return new Promise(function (resolve, reject) {
             User.find({ userName: userData.userName }).exec()
@@ -74,9 +70,7 @@ module.exports = {
                             users[0].loginHistory.push({ 
                                 dateTime: (new Date()).toString(),
                                 userAgent: userData.userAgent
-                            });
-                            
-                           
+                            });                           
                             User.updateOne({ userName: users[0].userName },
                                 { $set: { loginHistory: users[0].loginHistory } }
                             ).exec()

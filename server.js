@@ -9,7 +9,7 @@ https://expressjs.com/en/starter/static-files.html reffered this website for sho
 
 I have took help from yunseok Choi for completion of this assignment 5(The previous one 
   A6 is build upon A5 so his help is also mentioned).
-Assignment 6 is soley my work. Hope this wont affect any Acadmic Inegrity Issues
+Assignment 6(All the given requirments) is soley my work. Hope this wont affect any Acadmic Inegrity Issues
 * Name: AJO GEORGE  Student ID: 157845215  Date: 11-12-2022
 *
 * Your app’s URL (from Cyclic) :
@@ -211,6 +211,8 @@ app.get('/department/:departmentId',ensureLogin, (req, res) => {
       res.status(404).send('Department Not Found');
     });
 });
+
+
 //Updated Image Routes  with ensureLogin
 app.get('/images/add',ensureLogin, (req, res) => {
   res.render('addImage');
@@ -222,6 +224,8 @@ app.get("/images",ensureLogin, (req, res) => {
   })
 
 })
+
+
 
 // App posting methods  with ensureLogin
 app.post('/images/add',ensureLogin, upload.single('imageFile'), (req, res) => {
@@ -246,6 +250,8 @@ app.post('/departments/add',ensureLogin, (req, res) => {
 app.post('/departments/update',ensureLogin, (req, res) => {
   data_services.updateDepartment(req.body).then(res.redirect('/departments')).catch((err) => res.json({ message: err }));
 });
+
+//Required Authenication GET & POST Functions
 
 // login page route
 app.get("/login", function(req, res) {

@@ -1,3 +1,12 @@
+/*************************************************************************
+* BTI325– Assignment 6
+
+I have took help from yunseok Choi for completion of this assignment 5(The previous one 
+  A6 is build upon A5 so his help is also mentioned).
+  Assignment 6 is soley my work(All the requirments). Hope this wont affect any Acadmic Inegrity Issues.
+* Name: AJO GEORGE  Student ID: 157845215  Date: 11-12-2022
+
+*************************************************************************/ 
 const Sequelize = require('sequelize');
 
 var sequelize = new Sequelize(
