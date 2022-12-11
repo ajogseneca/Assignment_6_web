@@ -1,11 +1,19 @@
 /*************************************************************************
 * BTI325– Assignment 6
+* I declare that this assignment is my own work in accordance with Seneca Academic
+Policy. No part * of this assignment has been copied manually or electronically from any
+other source
+* (including 3rd party web sites) or distributed to other students.
+*https://www.javascripttutorial.net/javascript-array-filter/ reffered this webiste for filter functions.
+https://expressjs.com/en/starter/static-files.html reffered this website for showing the images 
 
 I have took help from yunseok Choi for completion of this assignment 5(The previous one 
   A6 is build upon A5 so his help is also mentioned).
-  Assignment 6 is soley my work(All the requirments). Hope this wont affect any Acadmic Inegrity Issues.
+  Assignment 6(All the given requirments) is soley my work. Hope this wont affect any Acadmic Inegrity Issues
 * Name: AJO GEORGE  Student ID: 157845215  Date: 11-12-2022
-
+*
+* Your app’s URL (from Cyclic) :https://scary-hare-kit.cyclic.app/
+*
 *************************************************************************/ 
 const Sequelize = require('sequelize');
 
